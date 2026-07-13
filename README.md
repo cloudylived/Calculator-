@@ -10,13 +10,15 @@ A simple Python calculator project built to practise Python fundamentals.
 - Supports addition, subtraction, multiplication, and division
 - Uses float numbers, allowing decimal calculations
 - Supports invalid operation handling
+- Protection from division by zero
 
 ## Current Version
 
-Version 0.3 - Added invalid operation handlings
+Version 0.4 - Added division by zero protection
 
 ## Planned Improvements
 
-- Add error handling, such as handling invalid operations or incorrect user input
+- Add error handling for non float inputs
+- Allow for user to try again when attempting an invalid input
 - Support multiple calculations without restarting the program
 - Refactor the calculator using functions

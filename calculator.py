@@ -17,9 +17,13 @@ elif operation == "*":
     answer = number1 * number2
 
 elif operation == "/":
-    valid_operation = True
-    answer = number1 / number2
-
+    if number2 == 0:
+        valid_operation = False
+        print("Cannot divide by zero")
+    else:
+        valid_operation = True
+        answer = number1 / number2
+    
 else:
     print ("Invalid operation")
     
