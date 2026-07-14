@@ -4,6 +4,8 @@ calculator_on = True
 
 while calculator_on:
 
+    continue_choice_valid = False 
+
     number_input_valid = False
 
     while not number_input_valid:
@@ -43,7 +45,7 @@ while calculator_on:
                 operation_valid = True
 
             else:
-                print("Invalid operation, try again")
+                print("Invalid operation. Please choose from the following: + - * /")
 
     if operation == "+":
         answer = number1 + number2
@@ -67,11 +69,25 @@ while calculator_on:
     if calculation_valid:
         print(answer)
     
-    continue_choice = input("New calculation? (y/n): ")
+    while not continue_choice_valid:
+            
+       continue_choice = input("New calculation? (y/n): ")
+     
+       if continue_choice == "n":
+            continue_choice_valid = True
+            calculator_on = False
 
-    if continue_choice == "n":
-        calculator_on = False
-
+       elif continue_choice == "y":
+           continue_choice_valid = True
     
+       else:
+           print("Invalid input. Please choose either 'y' or 'n' .")
+        
+
+print("Thank you for using Cloudy's Calculator!")
+ 
+
+       
+        
 
  
